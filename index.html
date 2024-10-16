@@ -72,6 +72,31 @@
                     </div>
                   </div>
                 </div>
+                <!-- parallelogram card -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                  <figure>
+                    <img
+                      src="images/parallelogram.png"
+                      alt="triangle" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title justify-center ">Parallelogram</h2>
+                    <p class="text-center">Area (A) = b X h</p>
+                    <div class=" text-center my-2">
+                      <input id="parallelogram-base" type="text" placeholder="Base" class="w-24 p-0.5 text-xl rounded-sm">
+                      <span class="mr-2 ml-1">cm</span>
+                      <input id="parallelogram-height" type="text" placeholder="Height" class="w-24 p-0.5 text-xl rounded-sm">
+                      <span class=" ml-1">cm</span>
+
+                    </div>
+                    <div class=" my-2">
+                      <p class="text-2xl">Area: <span id="parallelogram-area"> </span> <span>cm<sup>2</sup></span></p>
+                    </div>
+                    <div class="card-actions ">
+                      <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                  </div>
+                </div>
 
             </div>
             <!-- area calculation container -->
@@ -88,5 +113,6 @@
     <!-- js connection -->
      <script src="js/trianglecalculate.js"></script>
      <script src="js/rectanglecalculate.js"></script>
+     <script src="js/parallelogramcalculate.js"></script>
 </body>
 </html>
