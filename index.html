@@ -21,7 +21,7 @@
         <!-- main content container -->
         <div class="flex flex-col md:flex-row">
             <!-- shape card container -->
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="flex-1  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- triangle card -->
                 <div class="card bg-base-100 w-96 shadow-xl">
                     <figure>
@@ -90,10 +90,60 @@
 
                     </div>
                     <div class=" my-2">
-                      <p class="text-2xl">Area: <span id="parallelogram-area"> </span> <span>cm<sup>2</sup></span></p>
+                     <p class="text-2xl">Area: <span id="parallelogram-area"> </span> <span>cm<sup>2</sup></span></p>
                     </div>
                     <div class="card-actions ">
                       <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- pentagon card -->
+                <div class="card  bg-base-100 w-96 shadow-xl">
+                  <figure>
+                    <img
+                      src="images/pentagon.png"
+                      alt="triangle" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title justify-center ">Pentagon</h2>
+                    <p class="text-center">Area (A) = 0.5 X p X b</p>
+                    <div class=" text-center my-2">
+                      <input id="pentagon-perimeter" type="text" placeholder="Perimeter" class="w-24 p-0.5 text-xl rounded-sm">
+                      <span class="mr-2 ml-1">cm</span>
+                      <input id="pentagon-apothem" type="text" placeholder="Apothem" class="w-24 p-0.5 text-xl rounded-sm">
+                      <span class=" ml-1">cm</span>
+
+                    </div>
+                    <div class=" my-2">
+                     <p class="text-2xl">Area: <span id="pentagon-area"> </span> <span>cm<sup>2</sup></span></p>
+                    </div>
+                    <div class="card-actions ">
+                      <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ellipse card -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                  <figure>
+                    <img
+                      src="images/ellipse.png"
+                      alt="triangle" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title justify-center ">Ellipse</h2>
+                    <p class="text-center">Area (A) = pi X p X b</p>
+                    <div class=" text-center my-2">
+                      <input id="ellipse-major-radius" type="text" placeholder="r1" class="w-24 p-0.5 text-xl rounded-sm">
+                      <span class="mr-2 ml-1">cm</span>
+                      <input id="ellipse-minor-radius" type="text" placeholder="r2" class="w-24 p-0.5 text-xl rounded-sm">
+                      <span class=" ml-1">cm</span>
+
+                    </div>
+                    <div class=" my-2">
+                     <p class="text-2xl">Area: <span id="ellipse-area"> </span> <span>cm<sup>2</sup></span></p>
+                    </div>
+                    <div class="card-actions ">
+                      <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
                     </div>
                   </div>
                 </div>
@@ -106,7 +156,6 @@
 
             </div>
 
-
         </div>
 
     </main>
@@ -114,5 +163,8 @@
      <script src="js/trianglecalculate.js"></script>
      <script src="js/rectanglecalculate.js"></script>
      <script src="js/parallelogramcalculate.js"></script>
+     <script src="js/pentagon.js"></script>
+     <script src="js/ellipse.js"></script>
+     <script src="js/globalinputget.js"></script>
 </body>
 </html>

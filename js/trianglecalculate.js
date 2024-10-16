@@ -19,3 +19,5 @@ function calculateTriangleArea(){
     triangleAreaSpan.innerHTML = triangleArea;
 
 }
+
+// ====  Triangle Area function  ====
